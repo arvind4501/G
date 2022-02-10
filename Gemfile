@@ -8,13 +8,11 @@ gem 'rails', '~> 7.0.1'
 
 gem 'ransack', github: 'activerecord-hackery/ransack'
 # Use sqlite3 as the database for Active Record
-group :development do
+group :development, :test do
   gem 'sqlite3', '~> 1.4'
 end
 
-group :test do
-  gem 'sqlite3', '~> 1.4'
-end
+
 
 group :production do
   gem 'pg'

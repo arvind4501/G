@@ -24,6 +24,7 @@
 
  production:
    <<: *default
+   port: 5432
    adapter: postgresql
    database: db/production.postgresql
 
